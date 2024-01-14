@@ -24,6 +24,7 @@ end, { desc = "Toggle diagnostics" })
 require("lazy").setup("plugins")
 require("mason-config")
 require("colorscheme")
+require("code-completion")
 
 -- Plugin configs setup
 require("plugin-configs/treesitter")
