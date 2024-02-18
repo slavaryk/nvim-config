@@ -30,4 +30,17 @@ cmp.setup({
 			select = true,
 		}),
 	},
+
+	-- Snippets settings
+	snippet = {
+		expand = function(args)
+			vim.fn["vsnip#anonymous"](args.body)
+		end,
+	},
+
+	-- Window settings
+	window = {
+		completion = cmp.config.window.bordered(),
+		documentation = cmp.config.window.bordered(),
+	},
 })
