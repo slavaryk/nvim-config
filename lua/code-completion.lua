@@ -20,15 +20,16 @@ cmp.setup({
 	},
 
 	mapping = {
-		-- Go to next suggestion
+		-- Go to next suggestion Tab
 		["<Tab>"] = cmp.mapping.select_next_item(),
-		-- Go to previous suggestion
+		-- Go to previous suggestion Shift+Tab
 		["<S-Tab>"] = cmp.mapping.select_prev_item(),
-		-- Insert suggestion
+		-- Insert suggestion Enter
 		["<CR>"] = cmp.mapping.confirm({
 			behavior = cmp.ConfirmBehavior.Insert,
 			select = true,
 		}),
+		["<C-j>"] = cmp.mapping.close(),
 	},
 
 	-- Snippets settings
