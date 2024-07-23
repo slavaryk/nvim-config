@@ -18,9 +18,11 @@ vim.opt.rtp:prepend(lazypath)
 vim.cmd([[set number]])
 
 -- Sets keys shortcuts
+-- <leader>i === \ + i keybinding: opens diagnostic
 vim.keymap.set("n", "<leader>i", function()
 	vim.diagnostic.open_float(nil, { focus = false, scope = "cursor" })
 end, { desc = "Toggle diagnostics" })
+vim.keymap.set("t", "<ESC>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
 -- Core setup
 require("lazy").setup("plugins")
