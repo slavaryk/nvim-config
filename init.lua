@@ -17,6 +17,9 @@ vim.opt.rtp:prepend(lazypath)
 -- Sets line number on the left of the window
 vim.cmd([[set number]])
 
+-- Sets file change autodetect
+vim.cmd([[set autoread]])
+
 -- Sets keys shortcuts
 -- <leader>i === \ + i keybinding: opens diagnostic
 vim.keymap.set("n", "<leader>i", function()
