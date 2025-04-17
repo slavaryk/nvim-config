@@ -29,9 +29,9 @@ vim.keymap.set("t", "<ESC>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
 -- Core setup
 require("lazy").setup("plugins")
-require("mason-config")
 require("colorscheme")
 require("code-completion")
 
 -- Plugin configs setup
+require("plugin-configs/mason-config")
 require("plugin-configs/treesitter")
