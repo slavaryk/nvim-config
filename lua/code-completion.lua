@@ -30,6 +30,7 @@ cmp.setup({
 			select = true,
 		}),
 		["<C-j>"] = cmp.mapping.close(),
+		["<C-k>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
 	},
 
 	-- Snippets settings
