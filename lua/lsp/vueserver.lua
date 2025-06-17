@@ -1,3 +1,9 @@
 local lspconfig = require("lspconfig")
 
-lspconfig.volar.setup({})
+lspconfig.volar.setup({
+	init_options = {
+		vue = {
+			hybridMode = false,
+		},
+	},
+})
