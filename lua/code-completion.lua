@@ -29,7 +29,9 @@ cmp.setup({
 			behavior = cmp.ConfirmBehavior.Insert,
 			select = true,
 		}),
+		-- Close suggestions Ctrl+j
 		["<C-j>"] = cmp.mapping.close(),
+		-- Open suggestions Ctrl+k
 		["<C-k>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
 	},
 
