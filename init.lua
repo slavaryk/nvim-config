@@ -26,6 +26,9 @@ vim.cmd([[set spell]])
 -- Sets spell languages
 vim.cmd([[set spelllang=en,ru]])
 
+-- Sets spell options
+vim.cmd([[set spelloptions=camel]])
+
 -- Sets keys shortcuts
 -- <leader>i === \ + i keybinding: opens diagnostic
 vim.keymap.set("n", "<leader>i", function()
