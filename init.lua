@@ -20,6 +20,12 @@ vim.cmd([[set number]])
 -- Sets file change autodetect
 vim.cmd([[set autoread]])
 
+-- Sets spell check
+vim.cmd([[set spell]])
+
+-- Sets spell languages
+vim.cmd([[set spelllang=en,ru]])
+
 -- Sets keys shortcuts
 -- <leader>i === \ + i keybinding: opens diagnostic
 vim.keymap.set("n", "<leader>i", function()
