@@ -44,3 +44,4 @@ require("code-completion")
 -- Plugin configs setup
 require("plugin-configs/mason-config")
 require("plugin-configs/treesitter")
+require("plugin-configs/telescope")

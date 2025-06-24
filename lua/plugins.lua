@@ -8,6 +8,15 @@ return {
 		build = ":TSUpdate",
 	},
 
+	{
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.8",
+	},
+	{
+		"nvim-lua/plenary.nvim",
+		lazy = true,
+	},
+
 	-- Hrsh7th code completion
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-nvim-lsp",
@@ -17,4 +26,5 @@ return {
 	"hrsh7th/cmp-path",
 	"hrsh7th/cmp-buffer",
 	"hrsh7th/vim-vsnip",
+	"lewis6991/gitsigns.nvim",
 }
